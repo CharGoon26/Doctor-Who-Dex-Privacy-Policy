@@ -52,7 +52,11 @@ In addition, the following gameplay-specific data is generated, processed, and s
 * The list of Doctor Who collectible cards owned by a user.
 * A history of trades executed between users, including logging transaction pairs for account validation and security.
 * Active state data for turn-based player matches via the `/battle` system (current card health percentages, accumulated action energy states, active status conditions, and overall match counts).
-* **Ko-fi Transaction Identifiers:** If a user chooses to claim a premium card decoration, we temporarily process and record the **Ko-fi Transaction ID / Order URL** to securely verify payment and prevent duplicate redemptions of digital shop assets. No credit card numbers, legal names, or banking information are ever accessed or visible to our bot or team.
+* **Ko-fi Transaction & Shop Data:** If a user chooses to claim a premium card decoration through our Ko-fi shop, we collect the user's **Ko-fi username**, **Email address**, and **Transaction ID/Order URL**.
+* *Data Linking:* These transaction details are linked directly to your **Discord ID** inside our database to ensure proper shop fulfillment, manage your inventory, and prevent duplicate reward claims.
+* *Privacy Guarantee:* Your email address and Ko-fi username will **remain completely private**. This data will never be shared, sold, or used for marketing purposes. No credit card numbers, legal names, or banking details are ever processed or visible to our bot or development team.
+
+
 
 *Note regarding Message Content:* The bot does not cache or log chat messages. When a player types a name to catch a card, that message text is analyzed in memory for less than one second solely to register a successful catch and is immediately discarded. It is never stored on disk or accessible by administrators.
 
@@ -78,4 +82,4 @@ General community moderators or trial staff members on our support platforms do 
 
 You have the right to review what data is connected to your profile or request its permanent erasure.
 
-To delete your player profile, card inventory, battle statistics, and transaction logs permanently from our system, please submit a formal request via a support ticket in our [Official Support Server](https://discord.gg/AtdytZ5egm) or contact the developers directly on Discord at **@bigfatbrimmy** and **@melanutella**.
+To delete your player profile, card inventory, battle statistics, Ko-fi transaction ties, and logs permanently from our system, please submit a formal request via a support ticket in our [Official Support Server](https://discord.gg/AtdytZ5egm) or contact the developers directly on Discord at **@bigfatbrimmy** and **@melanutella**.
